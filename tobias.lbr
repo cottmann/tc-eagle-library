@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -130,14 +130,15 @@
 </layers>
 <library>
 <packages>
-<package name="HUZZAHBOARD">
+<package name="HUZZAH-FULL">
+<description>Includes all pads</description>
 <wire x1="-0.127" y1="35.306" x2="-0.127" y2="2.286" width="0" layer="20"/>
 <wire x1="-0.127" y1="2.286" x2="2.413" y2="-0.254" width="0" layer="20" curve="90"/>
 <wire x1="2.413" y1="-0.254" x2="22.733" y2="-0.254" width="0" layer="20"/>
 <wire x1="22.733" y1="-0.254" x2="25.273" y2="2.286" width="0" layer="20" curve="90"/>
 <wire x1="25.273" y1="2.286" x2="25.273" y2="35.306" width="0" layer="20"/>
 <wire x1="25.273" y1="35.306" x2="22.733" y2="37.846" width="0" layer="20" curve="90"/>
-<wire x1="22.733" y1="37.846" x2="2.413" y2="37.846" width="0" layer="20"/>
+<wire x1="22.733" y1="37.846" x2="2.413" y2="37.846" width="0" layer="26"/>
 <wire x1="2.413" y1="37.846" x2="-0.127" y2="35.306" width="0" layer="20" curve="90"/>
 <text x="20.32" y="0.762" size="0.9652" layer="21" font="vector" ratio="12" rot="R180">GND</text>
 <text x="14.732" y="0.762" size="0.9652" layer="21" font="vector" ratio="12" rot="R180">V+</text>
@@ -189,6 +190,59 @@
 <pad name="RXD_5V" x="11.43" y="1.27" drill="0.8"/>
 <pad name="TXD" x="8.89" y="1.27" drill="0.8"/>
 <pad name="P$26" x="6.35" y="1.27" drill="0.8"/>
+<text x="1.27" y="35.56" size="1.27" layer="21">&gt;Name</text>
+</package>
+<package name="HUZZAH-NO_FTDI">
+<description>Without Pads for FTDI</description>
+<wire x1="-0.127" y1="35.306" x2="-0.127" y2="2.286" width="0" layer="20"/>
+<wire x1="-0.127" y1="2.286" x2="2.413" y2="-0.254" width="0" layer="20" curve="90"/>
+<wire x1="2.413" y1="-0.254" x2="22.733" y2="-0.254" width="0" layer="20"/>
+<wire x1="22.733" y1="-0.254" x2="25.273" y2="2.286" width="0" layer="20" curve="90"/>
+<wire x1="25.273" y1="2.286" x2="25.273" y2="35.306" width="0" layer="20"/>
+<wire x1="25.273" y1="35.306" x2="22.733" y2="37.846" width="0" layer="20" curve="90"/>
+<wire x1="22.733" y1="37.846" x2="2.413" y2="37.846" width="0" layer="26"/>
+<wire x1="2.413" y1="37.846" x2="-0.127" y2="35.306" width="0" layer="20" curve="90"/>
+<text x="0.762" y="31.623" size="1.016" layer="21" font="vector" ratio="12" rot="R90" align="center">RST</text>
+<text x="0.762" y="29.21" size="1.016" layer="21" font="vector" ratio="12" rot="R90" align="center">A</text>
+<text x="0.762" y="26.67" size="1.016" layer="21" font="vector" ratio="12" rot="R90" align="center">EN</text>
+<text x="0.762" y="24.13" size="1.016" layer="21" font="vector" ratio="12" rot="R90" align="center">16</text>
+<text x="0.762" y="21.463" size="1.016" layer="21" font="vector" ratio="12" rot="R90" align="center">14</text>
+<text x="0.762" y="19.05" size="1.016" layer="21" font="vector" ratio="12" rot="R90" align="center">12</text>
+<text x="0.762" y="16.51" size="1.016" layer="21" font="vector" ratio="12" rot="R90" align="center">13</text>
+<text x="0.762" y="13.97" size="1.016" layer="21" font="vector" ratio="12" rot="R90" align="center">V+</text>
+<text x="0.762" y="10.795" size="1.016" layer="21" font="vector" ratio="12" rot="R90" align="center">VBat</text>
+<text x="2.54" y="6.858" size="1.016" layer="21" font="vector" ratio="12" align="center">GND</text>
+<text x="24.384" y="31.496" size="1.016" layer="21" font="vector" ratio="12" rot="R90" align="center">TX</text>
+<text x="24.384" y="28.956" size="1.016" layer="21" font="vector" ratio="12" rot="R90" align="center">RX</text>
+<text x="24.384" y="24.003" size="1.016" layer="21" font="vector" ratio="12" rot="R90" align="center">#4</text>
+<text x="24.384" y="26.543" size="1.016" layer="21" font="vector" ratio="12" rot="R90" align="center">#5</text>
+<text x="24.384" y="21.336" size="1.016" layer="21" font="vector" ratio="12" rot="R90" align="center">#0</text>
+<text x="24.384" y="18.923" size="1.016" layer="21" font="vector" ratio="12" rot="R90" align="center">#2</text>
+<text x="24.384" y="16.383" size="1.016" layer="21" font="vector" ratio="12" rot="R90" align="center">15</text>
+<text x="24.384" y="13.843" size="1.016" layer="21" font="vector" ratio="12" rot="R90" align="center">3V</text>
+<text x="22.86" y="6.731" size="1.016" layer="21" font="vector" ratio="12" rot="R180" align="center">GND</text>
+<text x="24.384" y="11.176" size="1.016" layer="21" font="vector" ratio="12" rot="R90" align="center">LDO</text>
+<pad name="RESET_5V" x="2.54" y="31.75" drill="0.8"/>
+<pad name="ADC" x="2.54" y="29.21" drill="0.8"/>
+<pad name="CH_PD" x="2.54" y="26.67" drill="0.8"/>
+<pad name="GPIO16" x="2.54" y="24.13" drill="0.8"/>
+<pad name="GPIO14" x="2.54" y="21.59" drill="0.8"/>
+<pad name="GPIO12" x="2.54" y="19.05" drill="0.8"/>
+<pad name="GPIO13" x="2.54" y="16.51" drill="0.8"/>
+<pad name="VIN" x="2.54" y="13.97" drill="0.8"/>
+<pad name="VBAT" x="2.54" y="11.43" drill="0.8"/>
+<pad name="TXD2" x="22.86" y="31.75" drill="0.8"/>
+<pad name="RXD_5V-2" x="22.86" y="29.21" drill="0.8"/>
+<pad name="GPIO5" x="22.86" y="26.67" drill="0.8"/>
+<pad name="GPIO4" x="22.86" y="24.13" drill="0.8"/>
+<pad name="GPIO0" x="22.86" y="21.59" drill="0.8"/>
+<pad name="GPIO2" x="22.86" y="19.05" drill="0.8"/>
+<pad name="GPIO15" x="22.86" y="16.51" drill="0.8"/>
+<pad name="3.3V" x="22.86" y="13.97" drill="0.8"/>
+<pad name="LDO_EN" x="22.86" y="11.43" drill="0.8"/>
+<pad name="GND3" x="22.86" y="8.89" drill="0.8"/>
+<pad name="GND" x="2.54" y="8.89" drill="0.8"/>
+<text x="1.27" y="35.56" size="1.27" layer="21">&gt;Name</text>
 </package>
 </packages>
 <symbols>
@@ -231,7 +285,7 @@ Based on https://github.com/adafruit/Adafruit-Huzzah-ESP8266-Basic-Breakout-PCB<
 <gate name="G$1" symbol="HUZZAH" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="HUZZAHBOARD">
+<device name="" package="HUZZAH-FULL">
 <connects>
 <connect gate="G$1" pin="3.3V" pad="3.3V"/>
 <connect gate="G$1" pin="ADC" pad="ADC"/>
@@ -254,7 +308,33 @@ Based on https://github.com/adafruit/Adafruit-Huzzah-ESP8266-Basic-Breakout-PCB<
 <connect gate="G$1" pin="VIN" pad="VIN VIN2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="FTDI"/>
+</technologies>
+</device>
+<device name="NOFTDI" package="HUZZAH-NO_FTDI">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="3.3V"/>
+<connect gate="G$1" pin="ADC" pad="ADC"/>
+<connect gate="G$1" pin="CH_PD" pad="CH_PD"/>
+<connect gate="G$1" pin="GND" pad="GND GND3"/>
+<connect gate="G$1" pin="GPIO0" pad="GPIO0"/>
+<connect gate="G$1" pin="GPIO12" pad="GPIO12"/>
+<connect gate="G$1" pin="GPIO13" pad="GPIO13"/>
+<connect gate="G$1" pin="GPIO14" pad="GPIO14"/>
+<connect gate="G$1" pin="GPIO15" pad="GPIO15"/>
+<connect gate="G$1" pin="GPIO16" pad="GPIO16"/>
+<connect gate="G$1" pin="GPIO2" pad="GPIO2"/>
+<connect gate="G$1" pin="GPIO4" pad="GPIO4"/>
+<connect gate="G$1" pin="GPIO5" pad="GPIO5"/>
+<connect gate="G$1" pin="LDO_EN" pad="LDO_EN"/>
+<connect gate="G$1" pin="RESET_5V" pad="RESET_5V"/>
+<connect gate="G$1" pin="RXD_5V" pad="RXD_5V-2"/>
+<connect gate="G$1" pin="TXD" pad="TXD2"/>
+<connect gate="G$1" pin="VBAT" pad="VBAT"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
+</connects>
+<technologies>
+<technology name="NOFTDI"/>
 </technologies>
 </device>
 </devices>
