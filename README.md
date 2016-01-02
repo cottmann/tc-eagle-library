@@ -1,7 +1,8 @@
 Eagle Library for RN2483, iC880A, Adafruit Huzzah
 =================================================
 
-*Use at your own risk. I have not tested these on a real board yet.*
+**Use at your own risk. I have not tested these on a real board yet.**
+
 If you have any comments or real life experience with this, please let me know. 
 
 Eagle library files for
@@ -15,6 +16,6 @@ License Information
 Created by Tobias Cottmann, 2016
 
 This library is released under the [Creative Commons ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/) license. 
-**You are welcome to use this library for commercial purposes.**
+You are welcome to use this library for commercial purposes.
 
 If you use this for your project and find it useful, please send me an email with the link. 
